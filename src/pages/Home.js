@@ -1,4 +1,3 @@
-import Header from '../components/Header'
 import Main from '../components/home/Main'
 import Shop from '../components/home/Shop'
 import BestSeller from '../components/home/BestSeller'
@@ -9,8 +8,7 @@ import Footer from '../components/home/footer'
 
 function Home() {
     return (
-        <div>
-            <Header />
+        <>
             <Main />
             <Shop />
             <BestSeller />
@@ -18,7 +16,7 @@ function Home() {
             <Testimonials />
             <Social />
             <Footer />
-        </div>
+        </>
     )
 }
 

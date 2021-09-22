@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Big Caslon';
+    src: url('BigCaslon-Medium.woff2') format('woff2'),
+        url('BigCaslon-Medium.woff') format('woff'),
+        url('BigCaslon-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownStd';
+    src: url('BrownStd-Bold.woff2') format('woff2'),
+        url('BrownStd-Bold.woff') format('woff'),
+        url('BrownStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownStd';
+    src: url('BrownStd-Light.woff2') format('woff2'),
+        url('BrownStd-Light.woff') format('woff'),
+        url('BrownStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownStd';
+    src: url('BrownStd-Regular.woff2') format('woff2'),
+        url('BrownStd-Regular.woff') format('woff'),
+        url('BrownStd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
