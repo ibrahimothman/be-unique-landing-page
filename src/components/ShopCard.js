@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addToCart, removeFromCart } from '../features/cart/cartSlice'
 
-function ShopCard({ imageSrc, i }) {
+function ShopCard({ imageSrc, i, buttonText }) {
 
     const dispatch = useDispatch()
     const [isAddedToCart, setIsAddedToCard] = useState(false)
@@ -36,7 +36,9 @@ function ShopCard({ imageSrc, i }) {
                     to=""
                     aria-label="shop"
                     className="absolute bottom-5 right-0 left-0 p-4 bg-white w-1/2 mx-auto text-center">
-                    <span className="font-brown font-bold text-black text-xs text-buttons">Shop Bath Towels</span>
+                    <span className="font-brown font-bold text-black text-xs text-buttons">
+                        {buttonText}
+                    </span>
                 </Link>
             )}
         </div>

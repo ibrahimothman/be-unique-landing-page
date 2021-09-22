@@ -3,6 +3,13 @@ import ShopCard from '../ShopCard'
 import Section from '../../ui/Section'
 
 function Shop() {
+
+    const buttonsText = [
+        'Shop Bath Linens',
+        'Shop Bath Towels',
+        'Shop Bath Robes',
+        'Shop Home Fragrances',
+    ]
     return (
         <Section>
             <h2 className="flex flex-col justify-center items-center mb-8">
@@ -11,7 +18,9 @@ function Shop() {
             </h2>
 
             <div className="grid grid-cols-2 gap-0 mt-4">
-                {[...new Array(4)].map((_,i) => <ShopCard key={i} i={i} imageSrc={`/images/image_${i+1}.jpg`}/>)}
+                {[...new Array(4)].map((_,i) => (
+                    <ShopCard key={i} i={i} imageSrc={`/images/image_${i+1}.jpg`} buttonText={buttonsText[i]}/>
+                ))}
             </div>
 
         </Section>
